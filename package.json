@@ -1,7 +1,7 @@
 {
   "name": "seamless-scroll",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "description": "无缝衔接滚动组件",
   "author": {
@@ -16,9 +16,15 @@
     "build:prod": "vue-tsc --noEmit && rimraf dist && vite build --mode production",
     "preview": "vite preview"
   },
+  "keywords": [
+		"seamless-scroll",
+		"vue",
+		"typescript",
+    "无缝衔接滚动组件"
+	],
   "repository": {
     "type": "git",
-    "url": "https://github.com/Yolo-00/work-template.git"
+    "url": "https://github.com/Yolo-00/seamless-scroll.git"
   },
   "license": "MIT",
   "dependencies": {
