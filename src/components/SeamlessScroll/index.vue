@@ -5,7 +5,7 @@ import { animationFrame, copyObj } from "./utils";
 animationFrame();
 
 defineOptions({
-	name: "ReSeamlessScroll"
+	name: "SeamlessScroll"
 });
 
 const props = defineProps({
