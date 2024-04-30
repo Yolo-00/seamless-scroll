@@ -1,0 +1,37 @@
+{
+  "name": "seamless-scroll",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "description": "无缝衔接滚动组件",
+  "author": {
+    "name": "Yolo",
+    "email": "g20180630105@gmail.com",
+    "url": "https://github.com/Yolo-00"
+  },
+  "scripts": {
+    "dev": "vite --mode development",
+    "build:dev": "vue-tsc --noEmit && rimraf dist && vite build --mode development",
+    "build:test": "vue-tsc --noEmit && rimraf dist && vite build --mode test",
+    "build:prod": "vue-tsc --noEmit && rimraf dist && vite build --mode production",
+    "preview": "vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Yolo-00/work-template.git"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@vueuse/core": "^10.9.0",
+    "vue": "^3.4.21"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.4",
+    "typescript": "^5.2.2",
+    "vite": "^5.2.0",
+    "vue-tsc": "^2.0.6"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
