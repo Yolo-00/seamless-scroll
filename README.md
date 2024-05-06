@@ -1,25 +1,18 @@
-<h1 align="center">seamless-scroll</h1>
+# vue3-danmaku
 
+> 基于 Vue3 的无缝衔接滚动组件
+
+## Install
+
+```bash
+ yarn add seamless-scroll-v3
+ # 或者使用 npm
+ npm install seamless-scroll-v3
+```
 
 ### 示例
 
 ```vue
-<template>
-  <button @click="handleReset('top')">向上</button>
-  <button @click="handleReset('bottom')">向下</button>
-  <button @click="handleReset('left')">向左</button>
-  <button @click="handleReset('right')">向右</button>
-  <div  style="height: 300px;">
-      <SeamlessScroll ref="scrollRef" :data="listData" :class-option="classOption" class="warp">
-          <ul class="item">
-              <li v-for="(item, index) in listData" :key="index">
-                  <span v-text="item.title" />
-              </li>
-          </ul>
-      </SeamlessScroll>
-  </div>
-</template>
-
 <script lang="ts" setup>
 import { ref } from "vue";
 import { SeamlessScroll } from "seamless-scroll-v3";
@@ -58,6 +51,22 @@ const handleReset = (val) => {
     classOption.value.direction = val;
 };
 </script>
+
+<template>
+  <button @click="handleReset('top')">向上</button>
+  <button @click="handleReset('bottom')">向下</button>
+  <button @click="handleReset('left')">向左</button>
+  <button @click="handleReset('right')">向右</button>
+  <div  style="height: 300px;">
+      <SeamlessScroll ref="scrollRef" :data="listData" :class-option="classOption" class="warp">
+          <ul class="item">
+              <li v-for="(item, index) in listData" :key="index">
+                  <span v-text="item.title" />
+              </li>
+          </ul>
+      </SeamlessScroll>
+  </div>
+</template>
 
 <style scoped lang="scss">
 .warp {
