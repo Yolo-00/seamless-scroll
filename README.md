@@ -1,4 +1,4 @@
-# vue3-danmaku
+# seamless-scroll-v3
 
 > 基于 Vue3 的无缝衔接滚动组件
 
