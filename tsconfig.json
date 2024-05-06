@@ -16,11 +16,9 @@
 		"outDir": "./dist",
 		"baseUrl": "./",
 		"declaration": true,
-    	"declarationDir": "dist",
 		"paths": {
 			"@": ["src"],
 			"@/*": ["src/*"]
 		}
-	},
-	"include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue", "vite.config.ts", "types/*.d.ts"]
+	}
 }

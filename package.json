@@ -1,6 +1,6 @@
 {
   "name": "seamless-scroll-v3",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "type": "module",
   "description": "无缝衔接滚动组件",
   "author": {
@@ -20,6 +20,7 @@
   "keywords": [
     "seamless-scroll",
     "vue",
+    "vue3",
     "typescript",
     "无缝衔接滚动组件"
   ],
