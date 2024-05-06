@@ -1,6 +1,6 @@
 {
   "name": "seamless-scroll-v3",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "type": "module",
   "description": "无缝衔接滚动组件",
   "author": {
@@ -8,12 +8,13 @@
     "email": "g20180630105@gmail.com",
     "url": "https://github.com/Yolo-00"
   },
-  "main": "lib/index.umd.js",
+  "main": "dist/index.umd.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "dev": "vite --mode development",
-    "build:dev": "vue-tsc --noEmit && rimraf lib && vite build --mode development",
-    "build:test": "vue-tsc --noEmit && rimraf lib && vite build --mode test",
-    "build:prod": "vue-tsc --noEmit && rimraf lib && vite build --mode production",
+    "build:dev": "vue-tsc --noEmit && rimraf dist && vite build --mode development",
+    "build:test": "vue-tsc --noEmit && rimraf dist && vite build --mode test",
+    "build:prod": "vue-tsc --noEmit && rimraf dist && vite build --mode production",
     "preview": "vite preview"
   },
   "keywords": [

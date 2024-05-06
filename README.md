@@ -22,7 +22,7 @@
 
 <script lang="ts" setup>
 import { ref } from "vue";
-import SeamlessScroll from "seamless-scroll";
+import { SeamlessScroll } from "seamless-scroll-v3";
 
 const scrollRef = ref(null);
 const classOption = ref({

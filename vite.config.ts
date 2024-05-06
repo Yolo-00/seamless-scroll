@@ -6,7 +6,7 @@ import { resolve } from 'path';
 export default defineConfig({
   plugins: [vue()],
   build: {
-    outDir: "lib", //输出文件名称
+    outDir: "dist", //输出文件名称
     lib: {
       entry: resolve(__dirname, './src/index.ts'), //指定组件编译入口文件
       name: 'seamless-scroll',
