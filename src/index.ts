@@ -1,11 +1,8 @@
-import SeamlessScroll from "./components/SeamlessScroll/index.vue";
-import type { App } from "vue";
+import { withInstall } from "./utils/install";
 
-const install = function (app: App<Element>) {
-    app.component("SeamlessScroll", SeamlessScroll);
-};
+import seamlessScroll from "./components/SeamlessScroll/index.vue";
 
-export default {
-    SeamlessScroll,
-    install,
-}
+export const SeamlessScroll = withInstall(seamlessScroll);
+export default SeamlessScroll;
+
+export * from "./components/SeamlessScroll/index.vue";

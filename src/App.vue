@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref } from "vue";
-import SeamlessScroll from "./components/SeamlessScroll/index.vue";
+import SeamlessScroll from "./index";
 
 const scrollRef = ref<typeof SeamlessScroll>();
 const classOption = ref({
