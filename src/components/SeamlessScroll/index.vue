@@ -2,6 +2,7 @@
 import { type CSSProperties, ref, unref, nextTick, computed, type PropType } from "vue";
 import { tryOnMounted, tryOnUnmounted, templateRef, useDebounceFn } from "@vueuse/core";
 import { animationFrame, copyObj } from "./utils";
+
 animationFrame();
 
 defineOptions({
