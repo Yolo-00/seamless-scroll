@@ -5,6 +5,7 @@ import { resolve } from 'path';
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => {
   return {
+    base: "./",
     plugins: [vue()],
     build: mode === "production" ? {
       outDir: "dist", //输出文件名称
