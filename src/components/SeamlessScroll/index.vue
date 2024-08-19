@@ -463,16 +463,9 @@ defineExpose({
 		<div v-if="navigation" :style="rightSwitch" :class="rightSwitchClass" @click="rightSwitchClick">
 			<slot name="right-switch" />
 		</div>
-		<div
-			:ref="'realBox' + props.classOption['key']"
-			:style="pos"
-			@mouseenter="enter"
-			@mouseleave="leave"
-			@touchstart.passive="touchStart"
-			@touchmove.passive="touchMove"
-			@touchend="touchEnd"
-			@mousewheel.passive="wheel"
-		>
+		<div :ref="'realBox' + props.classOption['key']" :style="pos" @mouseenter="enter" @mouseleave="leave"
+			@touchstart.passive="touchStart" @touchmove.passive="touchMove" @touchend="touchEnd"
+			@mousewheel.passive="wheel">
 			<div :ref="'slotList' + props.classOption['key']" :style="float">
 				<slot />
 			</div>
